@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>AutoCopy Plus</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>AutoCopy Plus</h1>
+  <p>Automatically copy selected text from any website.</p>
+
+<button id="toggleButton" class="off">Turn ON AutoCopy</button>
+
+<label>
+  <input type="checkbox" id="pasteToggle" checked />
+  Enable Paste Button
+</label>
+  <h2>Copy History</h2>
+  <div id="copyMessage" class="copy-message" style="display:none;">Copied!</div>
+  <div id="historyList" class="history-list"></div>
+
+  <div class="popup-actions">
+    <button id="clearHistory">🗑 Clear History</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

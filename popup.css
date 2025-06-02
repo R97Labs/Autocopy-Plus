@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  width: 250px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  margin: 0;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+#toggleButton {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.on {
+  background-color: #dc3545;
+}
+
+.off {
+  background-color: #28a745;
+}
+
+.history-list {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 13px;
+  user-select: none;
+}
+
+.history-item {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.history-item:last-child {
+  border-bottom: none;
+}
+
+.history-item:hover {
+  background-color: #f0f0f0;
+}
+
+.copy-message {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: #28a745;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.copy-message.show {
+  opacity: 1;
+  display: block;
+}
+
+.popup-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
